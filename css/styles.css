@@ -210,8 +210,8 @@ nav a:hover {
 /* HOME
 ---------------------------------*/
 .home {
-    background: url(../img/bg_ariana_1080px.jpg) no-repeat;
-    background-size: 100% 100%;
+    /* background: url(../img/bg_ariana_1080px.jpg) no-repeat;
+    background-size: 100% 100%; */
     display: flex;
     flex-direction: column;
 }
