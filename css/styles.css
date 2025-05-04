@@ -286,7 +286,10 @@ details {
 }
 
 .dl_btn {
-    position: absolute;
+    position: fixed;
+    top: 2%;
+    left: 1%;
+    z-index: 999;
     background-color: #7a288a00;
 }
 
@@ -297,14 +300,24 @@ summary {
 }
 
 
-.dropdown {
-    display: flex;
-    /* flex-direction: column; */
+.dl_btn .dropdown {
+    
     position: absolute;
+    top: 100%; /* directly below the summary */
+    left: 0;
     background-image: linear-gradient(45deg, #0061cf, #7A288A 60%);
     margin-top: 4em;
     margin-left: 15px;
     padding: 0;
+    /* display: flex; */
+    /* flex-direction: column; */
+    display: none;
+    flex-direction: column;
+}
+
+/* Show dropdown when <details> is open */
+.dl_btn[open] .dropdown {
+    display: flex;
 }
 
 .download-option {
