@@ -44,7 +44,7 @@
 	      <!-- //  ABOUT ME  // -->
 	      <main>
         <!-- Start content edits below this line. -->
-        <p>Jeg er en 30 år gammel kreativ og humoristisk erfaringskonsulent som er lidenskapelig opptatt av å hjelpe andre,
+        <p>Jeg er en <span id="age"></span> år gammel kreativ og humoristisk erfaringskonsulent som er lidenskapelig opptatt av å hjelpe andre,
           motivere og bygge broer mellom mennesker. 
           Med en ENFP-T personlighet er jeg alltid på jakt etter nye måter å inspirere og engasjere andre.
           Spesielt brenner jeg for <em>psykisk helse, medmenneskelighet og inkludering</em>.</p>
@@ -72,7 +72,7 @@
         <p>På youtube kanalen min vil du kunne finne innhold som fokuserer på psykisk helse, hvordan vi kan møte hverandre med mer forståelse og omsorg,
            og hvordan vi kan bygge et sterkere felleskap. 
            <!-- <u>YouTube kanalen er helt ny så er forløpig lite innhold.</u>--></p> 
-        <p>Linker til mine sosiale medier kan du finne nederst på siden</p>
+        <p>Linker til mine sosiale medier kan du finne nederst i høyre hjørne.</p>
         
 
         <!-- End content edits here. -->
@@ -81,5 +81,19 @@
     </div>
     <!-- LOADING FOOTER FROM JS -->
     <footer id="footer"></footer>
+    <script>
+      function calculateAge() {
+        const birthYear = 1994;
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        const currentMonth = today.getMonth() + 1; // Months are 0-based
+        const currentDay = today.getDate();
+
+        const isBeforeBirthday = currentMonth < 10 || (currentMonth === 10 && currentDay < 31);
+        return isBeforeBirthday ? currentYear - birthYear - 1 : currentYear - birthYear;
+      }
+
+      document.getElementById('age').textContent = calculateAge();
+    </script>
   </body>
 </html>

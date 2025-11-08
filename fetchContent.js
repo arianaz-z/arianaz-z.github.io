@@ -7,3 +7,4 @@ function fetchAndSetContent(elementId, url) {
 // Call the function for header and footer
 fetchAndSetContent('header', 'header.html');
 fetchAndSetContent('footer', 'footer.html');
+

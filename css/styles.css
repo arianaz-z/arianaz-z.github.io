@@ -49,7 +49,8 @@ h1:hover {
 }
 
 h2 {
-    font-size: 4.6rem;
+    font-family: Arial;
+    font-size: 2.6rem;
 }
 h3 {
     font-family: Helvetica;
@@ -250,7 +251,7 @@ header {
 /* RESUME
 ---------------------------------*/
 .resume header::before {
-    background: url(../img/a_banner_1080px.png) no-repeat top center;
+    background: url(../img/banner_1080px.png) no-repeat top center;
     background-size: cover;
     /* background-position: 0 8%; */
     object-fit: fill;
@@ -259,6 +260,7 @@ header {
     height: 26rem;
     /* width: 100%; */
     min-width: 97vw;
+
 }
 
 
@@ -588,7 +590,7 @@ small p{
     }
 
     .resume header::before {
-        background: url(../img/a_banner_400px.png) no-repeat top center;
+        background: url(../img/banner_400px.png) no-repeat top center;
         background-size: contain;
         /* width: 100%; */
     }
@@ -604,7 +606,7 @@ small p{
         background-image: url(../img/bg_ariana_512px.jpg) no-repeat;
     }
     .resume header::before {
-        background: url(../img/a_banner_512px.png) no-repeat top center;
+        background: url(../img/banner_512px.png) no-repeat top center;
         background-size: contain;
     }
 
@@ -619,7 +621,7 @@ small p{
         background-image: url(../img/bg_ariana_768px.jpg) no-repeat;
     }
     .resume header::before {
-        background: url(../img/a_banner_768px.png) no-repeat top center;
+        background: url(../img/banner_768px.png) no-repeat top center;
         background-size: cover;
         background-position: 0 25%;
     }
@@ -632,7 +634,7 @@ small p{
     }
 
     .resume header::before {
-        background: url(../img/a_banner_1080px.png) no-repeat top center;
+        background: url(../img/banner_1080px.png) no-repeat top center;
         background-size: cover; /* Ensures the whole image is visible */
         /* min-height: 45vh; */
         background-position: 0 50%;
@@ -645,7 +647,7 @@ small p{
     }
 
     .resume header::before {
-        background: url(../img/a_banner_1080px.png) no-repeat top center;
+        background: url(../img/banner_1080px.png) no-repeat top center;
         background-size: contain;
         height: 35vh;
         /* background-position: 0 60%; */
